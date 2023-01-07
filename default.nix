@@ -3,7 +3,8 @@
 , extraLibs ? [ ], nixosTests }:
 
 stdenv.mkDerivation rec {
-  pname = "st-snazzy";
+  name = "st-snazzy";
+  pname = name;
   version = "0.8.5";
 
   src = ./.;
