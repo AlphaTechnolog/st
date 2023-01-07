@@ -5,9 +5,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrainsMono Nerd Font :pixelsize=15:antialias=true:autohint=true";
-static char *font2[] = { "JetBrainsMono Nerd Font :pixelsize=15:antialias=true:autohint=true" };
-static int borderpx = 0;
+static char *font = "Liga SFMono Nerd Font :pixelsize=12:antialias=true:autohint=true";
+static char *font2[] = { "Liga SFMono Nerd Font :pixelsize=12:antialias=true:autohint=true" };
+static int borderpx = 20;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -118,28 +118,28 @@ float alpha = 1.0;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-  "#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
-  "#cc241d",
-  "#98971a",
-  "#d79921",
-  "#458588",
-  "#b16286",
-  "#689d6a",
-  "#a89984",
-  "#928374",
-  "#fb4934",
-  "#b8bb26",
-  "#fabd2f",
-  "#83a598",
-  "#d3869b",
-  "#8ec07c",
-  "#ebdbb2",
+  "#0d0f18", /* hard contrast: #1d2021 / soft contrast: #32302f */
+  "#dd6777",
+  "#90ceaa",
+  "#ecd3a0",
+  "#86aaec",
+  "#c296eb",
+  "#93cee9",
+  "#cbced3",
+  "#1c1e27",
+  "#e26c7c",
+  "#95d3af",
+  "#f1d8a5",
+  "#8baff1",
+  "#c79bf0",
+  "#98d3ee",
+  "#d0d3d8",
   [255] = 0,
   /* more colors can be added after 255 to use with DefaultXX */
-  "#add8e6", /* 256 -> cursor */
-  "#555555", /* 257 -> rev cursor*/
-  "#282828", /* 258 -> bg */
-  "#ffffff", /* 259 -> fg */
+  "#86aaec", /* 256 -> cursor */
+  "#a5b6cf", /* 257 -> rev cursor*/
+  "#0d0f18", /* 258 -> bg */
+  "#a5b6cf", /* 259 -> fg */
 };
 
 
@@ -165,7 +165,7 @@ unsigned int defaultrcs = 257;
  * 7: Blinking st cursor
  * 8: Steady st cursor
  */
-static unsigned int cursorshape = 1;
+static unsigned int cursorshape = 6;
 
 /*
  * Default columns and rows numbers
