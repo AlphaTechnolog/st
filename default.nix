@@ -33,10 +33,10 @@ stdenv.mkDerivation rec {
   passthru.tests.test = nixosTests.terminal-emulators.st;
 
   meta = with lib; {
-    homepage = "https://github.com/siduck/st";
+    homepage = "https://github.com/AlphaTechnolog/st";
     description = "snazzy terminal (suckless + lightweight)";
     license = licenses.mit;
-    maintainers = with maintainers; [ sioodmy ];
+    maintainers = with maintainers; [ alphatechnolog ];
     platforms = platforms.unix;
   };
 }
